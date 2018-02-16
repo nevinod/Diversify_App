@@ -1,0 +1,32 @@
+.coin-form {
+  margin-left: 190px;
+  margin-right: 180px;
+
+}
+
+.coin-input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  width: 125px;
+}
+
+input.search-coin {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+
+}
+
+.result-coin {
+  margin-left: 190px;
+  margin-right: 180px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.explanation {
+  margin-left: 190px;
+  margin-right: 180px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
