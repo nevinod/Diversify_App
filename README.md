@@ -1,5 +1,7 @@
 # DIVERSIFY!
 
+https://nevinod.github.io/Diversify_App/
+
 ## Background and Overview
 
 Many coins in the cryptosphere are highly correlated. Diversify! is a tool that compares the correlations of different coins, allowing the user to optimally 'diversify' their crypto investments.
