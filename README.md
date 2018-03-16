@@ -6,7 +6,7 @@ https://nevinod.github.io/Diversify_App/
 
 Many coins in the cryptosphere are highly correlated. Diversify! is a tool that compares the correlations of different coins, allowing the user to optimally 'diversify' their crypto investments.
 
-The app will visually depict the correlation of whichever coins the user selects, and will also suggest coins that are most inversely correlated with the users' current portfolio.
+The app will visually depict the price chart of whichever coin the user selects, and will then suggest the coin that is most inversely correlated with the users' selection.
 
 ## Functionality and MVP
 
