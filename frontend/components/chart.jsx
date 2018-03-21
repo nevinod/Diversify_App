@@ -6,14 +6,13 @@ import Chart from 'chart.js'
 import merge from 'lodash/merge'
 import Correlation from 'node-correlation'
 
-// ${Math.floor(Math.random() * 200)}
 let practice = []
 
 const data = {
   labels: [],
   datasets: [
     {
-      label: 'Data One',
+      label: 'BTC',
       lineTension: 0.5,
       backgroundColor: 'rgba(75,192,192,0.2)',
       borderColor: 'rgba(75,192,192,1)',
@@ -63,13 +62,14 @@ const options = {
         fontSize: 50,
         fontFamily: 'Helvetica',
         fontStyle: 300,
+        fontColor: 'black'
       },
       layout: {
         padding: {
-                left: 180,
-                right: 180,
-                top: 25,
-                bottom: 50
+                left: 0,
+                right: 0,
+                top: 50,
+                bottom: 0
         }
       },
       scales: {
@@ -77,12 +77,40 @@ const options = {
           id: 'A',
           type: 'linear',
           position: 'left',
+          gridLines: {
+            color: 'black',
+            display: false
+          },
+          ticks: {
+            fontColor: 'black'
+          }
         }, {
           id: 'B',
           type: 'linear',
-          position: 'right'
+          position: 'right',
+          ticks: {
+            fontColor: 'black'
+          },
+          gridLines: {
+            color: 'black',
+            display: false
+          },
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: 'black'
+          },
+          gridLines: {
+            color: 'black',
+            display: false
+          },
         }]
-    }
+      },
+      legend: {
+        labels: {
+          fontColor: 'black'
+        }
+      }
 }
 
 class Graph extends React.Component {
@@ -158,35 +186,21 @@ class Graph extends React.Component {
              testArr.push(res.body.Data[j].close)
            }
          }
-         // console.log(allCoins[i]);
-         // console.log(testArr);
 
          let temp = Correlation.calc(testArr, inputArr);
-         // console.log(temp);
          if(parseFloat(temp) < parseFloat(that.state.Lowest)) {
-           console.log("LOWER");
            that.setState({ Winner: allCoins[i] , Lowest: temp, tempData: testArr })
 
          }
-
-         // console.log("STATE:");
-         // console.log(that.state);
 
        })
 
 
      }
 
-
-
-
-
-
-
    }
 
   render() {
-    // console.log(this.state.Coins);
 
 
 
@@ -201,8 +215,12 @@ class Graph extends React.Component {
     }
     data.labels = this.labelArray()
 
-    console.log("STATE:");
-    console.log(this.state);
+    if(this.state.Winner) {
+      data.datasets[0].label = this.state.Symbol
+    } else {
+      data.datasets[0].label = 'BTC'
+    }
+    data.datasets[1].label = this.state.Winner
 
 
 
@@ -212,7 +230,7 @@ class Graph extends React.Component {
 
 
         <form className="coin-form" onSubmit={e => this.handleSubmit(e)} >
-          <label>
+          <label className="input-box">
             <input
               type="text"
               className="coin-input"
@@ -222,12 +240,17 @@ class Graph extends React.Component {
           </label>
           <input type="submit" className="search-coin" value="Search" />
         </form>
-        <h2 className="result-coin">Suggested Coin : </h2>
-        <h3 className="result-coin">{this.state.Winner}</h3>
-        <p className="explanation">Please enter the coin you own in the input field (all caps please, i.e. BTC or ETH). This app will find a coin in the top 100 that is
-        least correlated with your coin, allowing you to diversify your crypto investment. Please refresh before entering another coin </p>
+        <h3 className="result-coin">Suggestion: {this.state.Winner}</h3>
+        <h2 className="result-coin">How to use Diversify : </h2>
 
-      </div>
+        <p className="explanation">Please enter the coin you own (all caps) into the input field. This app will find the coin in the top 100 that is the
+          least correlated with your coin, allowing you to diversify your crypto investment and minimize losses during crashes. If you are not familiar with crypto, listed below are a list of acronyms for some coins:
+        </p>
+        <p className="explanation">
+          BTC (Bitcoin), ETH (Ethereum), XMR (Monero), ADA (Cardano), KNC (Kyber), OMG (OmiseGo), DOGE (Dogecoin), ZEN (Zencash)
+        </p>
+
+      </div >
     )
   }
 }
