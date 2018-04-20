@@ -40,6 +40,7 @@ const data = {
   ]
 };
 
+//list of possible tokens to search from
 const allCoins = [
   'BTC', 'ETH', 'XRP', 'BCH', 'LTC', 'ADA', 'XLM', 'NEO', 'EOS', 'XMR',
   'DASH', 'NEM', 'LSK', 'ETC', 'QTUM', 'OMG', 'ZEC', 'STEEM', 'BNB',
@@ -133,6 +134,7 @@ class Graph extends React.Component {
    }
 
    componentWillMount() {
+     //initially start the page to show a chart of bitcoin
      let url = 'https://min-api.cryptocompare.com/data/histoday?fsym=' + 'BTC' + '&tsym=USD&limit=60&aggregate=3&e=CCCAGG'
      let that = this
      request.get(url, (err, res) => {
@@ -159,6 +161,8 @@ class Graph extends React.Component {
    handleSubmit(e) {
      this.setState({ Lowest: 1.5 , Winner: ''} )
      e.preventDefault()
+
+     //make api call using the inputted coin symbol
      let url = `https://min-api.cryptocompare.com/data/histoday?fsym=${this.state.Symbol}&tsym=USD&limit=60&aggregate=3&e=CCCAGG`
      let that = this
      request.get(url, (err, res) => {
@@ -187,6 +191,7 @@ class Graph extends React.Component {
            }
          }
 
+         //calculate correlation between the inputted coin and every other
          let temp = Correlation.calc(testArr, inputArr);
          if(parseFloat(temp) < parseFloat(that.state.Lowest)) {
            that.setState({ Winner: allCoins[i] , Lowest: temp, tempData: testArr })
