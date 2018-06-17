@@ -248,9 +248,7 @@ class Graph extends React.Component {
         <h3 className="result-coin">Suggestion: {this.state.Winner}</h3>
         <h2 className="result-coin">How to use Diversify : </h2>
 
-        <p className="explanation">Please enter the coin you own (all caps) into the input field. This app will find the coin in the top 100 that is the
-          least correlated with your coin, allowing you to diversify your crypto investment and minimize losses during crashes. If you are not familiar with crypto, listed below are a list of acronyms for some coins:
-        </p>
+
         <p className="explanation">
           BTC (Bitcoin), ETH (Ethereum), XMR (Monero), ADA (Cardano), KNC (Kyber), OMG (OmiseGo), DOGE (Dogecoin), ZEN (Zencash)
         </p>
