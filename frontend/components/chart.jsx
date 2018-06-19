@@ -60,7 +60,7 @@ const options = {
       title: {
         display: true,
         text: 'DIVERSIFY!',
-        fontSize: 50,
+        fontSize: 20,
         fontFamily: 'Helvetica',
         fontStyle: 300,
         fontColor: 'black'
@@ -69,7 +69,7 @@ const options = {
         padding: {
                 left: 0,
                 right: 0,
-                top: 50,
+                top: 0,
                 bottom: 0
         }
       },
@@ -246,7 +246,7 @@ class Graph extends React.Component {
           <input type="submit" className="search-coin" value="Search" />
         </form>
         <h3 className="result-coin">Suggestion: {this.state.Winner}</h3>
-        
+
         <p className="explanation">
           BTC (Bitcoin), ETH (Ethereum), XMR (Monero), ADA (Cardano), KNC (Kyber), OMG (OmiseGo), DOGE (Dogecoin), ZEN (Zencash)
         </p>
