@@ -96,6 +96,7 @@ input.search-coin {
 }
 
 .button {
-  padding: 10px;
+  padding: 25px;
   border-radius: 10px;
+  font-size: 25px;
 }

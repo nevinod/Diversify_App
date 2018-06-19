@@ -246,9 +246,7 @@ class Graph extends React.Component {
           <input type="submit" className="search-coin" value="Search" />
         </form>
         <h3 className="result-coin">Suggestion: {this.state.Winner}</h3>
-        <h2 className="result-coin">How to use Diversify : </h2>
-
-
+        
         <p className="explanation">
           BTC (Bitcoin), ETH (Ethereum), XMR (Monero), ADA (Cardano), KNC (Kyber), OMG (OmiseGo), DOGE (Dogecoin), ZEN (Zencash)
         </p>
