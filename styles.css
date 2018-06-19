@@ -88,3 +88,9 @@ input.search-coin {
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal {
+  color: red;
+  /* background-color: grey; */
+  font-family: 'Lato', sans-serif;
+}
