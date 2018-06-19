@@ -94,3 +94,8 @@ input.search-coin {
   /* background-color: grey; */
   font-family: 'Lato', sans-serif;
 }
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+}
