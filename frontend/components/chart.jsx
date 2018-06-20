@@ -49,7 +49,7 @@ const allCoins = [
   'ARK', 'DGD', 'GAS', 'BAT', 'LRC', 'KNC', 'BTM', 'PIVX', 'GNT','SYS',
   'PLR', 'FCT', 'LINK', 'PAY', 'BNT', 'PART', 'REQ', 'MAID', 'XZC',
   'KIN', 'ENG', 'NXT', 'SALT', 'FUN', 'CND', 'AION', 'SAN',
-  'QSP', 'VTC', 'ICN', 'GNO', 'SUB', 'CVC', 'RDN', 'ZEN', 'NXS', 'ANT',
+  'QSP', 'VTC', 'ICN', 'GNO', 'SUB', 'CVC', 'ZEN', 'NXS', 'ANT',
   'TNT', 'AMB', 'MLN', 'SNGLS', 'MTL', 'SNM', 'AST', 'MOD', 'QRL',
   'RPX', 'VEE', 'NAV', 'MANA', 'EMC', 'DNT', 'ION', 'COSS', 'ONION',
   'GRS', 'TAAS', 'DCT', 'VIBE', 'HST', 'LUN', 'UNO', 'EVX', 'DLT',
