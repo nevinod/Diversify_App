@@ -16,6 +16,9 @@
   border-color: darkgrey;
   width: 100px;
   border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   /* height: 5%; */
   /* width: 400px; */
 }
@@ -31,11 +34,20 @@ input.search-coin {
 
 }
 
+.result-coin-actual {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin-top: 40px;
+
+}
+
 .result-coin {
   /* margin-left: 190px; */
   /* margin-right: 180px; */
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  margin-top: 40px;
+  color: white;
 }
 
 .explanation {
@@ -43,11 +55,12 @@ input.search-coin {
   /* margin-right: 180px; */
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  color: white;
 }
 
 .chart {
-  height: 50%;
-  width: 65%;
+  height: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -99,5 +112,10 @@ input.search-coin {
   padding: 17px;
   border-radius: 10px;
   font-size: 17px;
-  margin-bottom: -40px;
+  margin-bottom: -20px;
+}
+
+.newcone {
+  color: black;
+  font-size: 17;
 }

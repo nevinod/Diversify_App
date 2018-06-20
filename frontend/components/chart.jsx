@@ -245,7 +245,8 @@ class Graph extends React.Component {
           </label>
           <input type="submit" className="search-coin" value="Search" />
         </form>
-        <h3 className="result-coin">Suggestion: {this.state.Winner}</h3>
+        <h2 className="newcone">Suggestion: {this.state.Winner}</h3>
+        <h3 className="result-coin-actual">Suggestion: {this.state.Winner}</h3>
 
         <p className="explanation">
           BTC (Bitcoin), ETH (Ethereum), XMR (Monero), ADA (Cardano), KNC (Kyber), OMG (OmiseGo), DOGE (Dogecoin), ZEN (Zencash)
