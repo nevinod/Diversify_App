@@ -249,7 +249,7 @@ class Graph extends React.Component {
         <h3 className="result-coin-actual">Suggestion: {this.state.Winner}</h3>
 
         <p className="explanation">
-          BTC (Bitcoin), ETH (Ethereum), XMR (Monero), OMG (OmiseGo), BAT (Basic Attention Token), DOGE (Dogecoin), ZEN (Zencash),
+          BTC (Bitcoin), ETH (Ethereum), XMR (Monero), OMG (OmiseGo), BAT (Basic Attention Token), ZEN (Zencash),
         </p>
 
       </div >
