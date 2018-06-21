@@ -61,7 +61,7 @@ const options = {
         display: true,
         text: 'DIVERSIFY!',
         fontSize: 20,
-        fontFamily: 'Times New Roman',
+        fontFamily: 'Helvitaca',
         fontStyle: 300,
         fontColor: 'black'
       },
