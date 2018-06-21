@@ -248,7 +248,7 @@ class Graph extends React.Component {
         <h2 className="newcone">Suggestion: {this.state.Winner}</h3>
         <h3 className="result-coin-actual">Suggestion: {this.state.Winner}</h3>
 
-        <p className="explanation">
+        <p className="coin listing">
           BTC (Bitcoin), ETH (Ethereum), XMR (Monero), OMG (OmiseGo), BAT (Basic Attention Token), ZEN (Zencash),
         </p>
 
