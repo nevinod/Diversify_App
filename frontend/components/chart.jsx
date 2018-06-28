@@ -248,7 +248,7 @@ class Graph extends React.Component {
 
         <h2 className="newcone">Suggestion: {this.state.Winner}</h3>
         <h3 className="result-coin-actual">Suggestion: {this.state.Winner}</h3>
-)
+
 
       </div >
     )

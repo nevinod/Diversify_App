@@ -41,12 +41,16 @@ input.search-coin {
 
 }
 
-.result-coin {
+h3.result-coin {
   /* margin-left: 190px; */
   /* margin-right: 180px; */
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin-top: 40px;
+  color: black;
+}
+
+.result-coin {
   color: white;
 }
 
